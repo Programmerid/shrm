@@ -1,0 +1,74 @@
+.pagination{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &__main{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 270px;
+
+        &-nav_prev,
+        &-nav_next {
+            border: 1px solid $brown-light !important;
+    
+            &::before{
+                background: url("../../../public/images/icons/arrow.svg") no-repeat center;
+                background-size: cover;
+                content: "";
+                height: 10px;
+                width: 6px;
+                position: absolute;
+                left: calc(50% - 3px);
+                top: calc(50% - 5px);
+            }
+        }
+    
+        button{
+            background-color: transparent;
+            border: none;
+            border-radius: 8px;
+            color: $black;
+            cursor: pointer;
+            font-weight: 700;
+            position: relative;
+            height: 32px;
+            width: 32px;
+
+            &.active{
+                background-color: $grey-light;
+                color: $brown;
+            }
+        }
+        button[disabled]{
+            cursor: default;
+
+            &::before{
+                opacity: 0.5;
+            }
+        }
+    
+        &-nav_prev{
+            &::before{
+                transform: rotate(180deg);
+            }
+        }
+
+        &-nav-pages{
+            span{
+                cursor: default;
+            }
+        }
+
+        
+    }
+
+    &__info{
+        
+    }
+
+}

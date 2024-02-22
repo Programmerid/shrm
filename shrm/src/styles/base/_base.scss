@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../../assets/ProximaNova/ProximaNova-Regular.eot');
+    src: url('../../assets/ProximaNova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../../assets/ProximaNova/ProximaNova-Regular.woff') format('woff'),
+    url('../../assets/ProximaNova/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+	font-style: normal;
+}
+
+body {
+    background-color: $grey-light;
+    font-family: 'Proxima Nova', sans-serif;
+    margin: 0;
+}
+
+// Titles
+h1{
+    font-size: 80px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 48px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 32px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+h4{
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+h5{
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 14px;
+}
+
+#root{
+    display: inline-block;
+    width: 100%;
+}
+
+.app-container{
+    min-width: 375px;
+}
+
+// Main Container
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1240px;
+}
+
+// Button Brown
+.btn-brown{
+    background-color: $brown;
+    border-radius: 8px;
+    color: $white;
+    display: inline-block;
+    font-size: 12px;
+    padding: 10px 22px;
+    text-align: center;
+    transition: ease-in-out 0.2s;
+
+    &:hover{
+        background-color: #CBAC7B;
+    }
+
+    &.pressed{
+        background-color: #CBAC7B;
+    }
+    &.disabled{
+        opacity: 0.5;
+    }
+}

@@ -1,0 +1,98 @@
+.catalog{
+    width: 100%;
+
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: -45px auto 0;
+        padding: 0 16px 40px 16px;
+    }
+
+}
+.main-content{
+    background-color: $white;
+    box-shadow: 1px 1px 5px 1px rgba(209,209,209,.25);
+    border-radius: 16px;
+    padding: 30px 26px;
+    width: 100%;
+    max-width: 900px;
+
+    &__top{
+        
+    }
+
+    &__block{
+        border: 1px solid $brown-light;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 0 0 25px 0;
+        padding: 24px;
+
+        &:last-child{
+            margin: 0;
+        }
+
+        &-logo{
+            margin: 0 15px 0 0;
+
+            img{
+                height: auto;
+                width: 46px;
+            }
+        }
+        &-info{
+            display: flex;
+            width: 100%;
+
+            &-description{
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+
+                h4{
+                    margin: 0 0 10px 0;
+                }
+                p{
+                    margin: 0 0 10px 0;
+                }
+                &-tags{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+
+                    span{
+                        background-color: rgba(174,152,117,.1);
+                        border: none;
+                        border-radius: 8px;
+                        color: $brown;
+                        font-size: 14px;
+                        padding: 11px 10px;
+                        margin: 5px 10px 5px 0;
+                        transition: ease-in-out .2s;
+                    }
+
+                    .pricetag{
+                        background-color: rgba(0, 118, 190, 0.1);
+                        color: $blue-light;
+                    }
+                }
+            }
+            &-additional{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: space-between;
+                flex-grow: 1;
+
+                .btn-brown{}
+                .btn-learn-more{
+                    p{}
+                }
+            }
+        }
+    }
+}
